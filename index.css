@@ -37,6 +37,7 @@
     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
+    --soil: #a49996;
     --white-1: #e5e5e6da;
 
 
@@ -45,7 +46,7 @@
     --container-medium-width: 700px; 
     --container-small-width: 500px;
 
-    --gutter-huge: 12rem;
+    --gutter-huge: 10rem;
     --gutter-medium: 6rem;
     --gutter-normal: 3rem;
     --gutter-small-1: 2.5rem;
@@ -132,6 +133,7 @@ h3 {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    
 }
 
 @media(max-width: 900px) {
@@ -150,7 +152,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--soil);
     margin: var(--gutter-small) 0;
 }
 
@@ -201,7 +203,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--soil);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -210,7 +212,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--soil);
 }
 
 .btn {
@@ -219,7 +221,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--soil);
     font-weight: 400;
 }
 
@@ -243,20 +245,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--soil);
 }
 
-.btn--pink {
-    background: var(--pink);
+.btn--soil {
+    background: var(--soil);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--soil::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--soil:hover,
+.btn--soil:focus {
     background: transparent;
 }
 
@@ -266,7 +268,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--soil);
 }
 
 .link__text::after {
@@ -289,7 +291,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--soil);
 }
 
 .link__text span {
@@ -308,7 +310,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--soil);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -390,13 +392,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--soil);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--soil);
 }
 
 /* --------------------------------------- */
@@ -404,13 +406,16 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(255, 254, 254, 0.1), rgba(0,0,0, .4)), 
+        url('./images/image\ 9.png');
+    
+    height: 150vh;
+    background-size: contain;
+    background-position: fixed;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+    /* image-orientation: from-image; */
+    /* width: 500px */
 }
 
 .header__text {
@@ -490,6 +495,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+    size: 10px;
 }
 
 @media(min-width: 901px) {
@@ -505,6 +511,27 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.visual__logos {
+    display: flex;
+    justify-content: space-between;
+    /* filter: opacity(.8); */
+}
+
+.visual__logo {
+    height: 20rem;
+    max-width: 20rem;
+}
+
+@media(max-width: 1240px) {
+    .visual__logos {
+        overflow-x: scroll;
+        padding: var(--gutter-normal);
+    }
+
+    .visual__logo:not(:last-of-type) {
+        margin-right: var(--gutter-medium);
+    }
+}
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
@@ -512,12 +539,12 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    /* filter: opacity(.8); */
 }
 
 .client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+    height: 20rem;
+    max-width: 20rem;
 }
 
 @media(max-width: 1240px) {
@@ -554,7 +581,8 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        flex: 0 0 35%;
+        
+        flex: 0 0 30%;
     }
     
     .about__photo-container {
