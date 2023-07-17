@@ -494,8 +494,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
-    margin-bottom: var(--gutter-normal);
-    size: 10px;
+    margin-bottom: var(30rem);
+    size: 100px;
 }
 
 @media(min-width: 901px) {
