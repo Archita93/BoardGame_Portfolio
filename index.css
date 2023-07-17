@@ -495,7 +495,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(30rem);
-    size: 100px;
+    size: 0px;
 }
 
 @media(min-width: 901px) {
