@@ -48,6 +48,8 @@
 
     --gutter-huge: 10rem;
     --gutter-medium: 6rem;
+    --gutter-medium-1: 5.1rem;
+
     --gutter-normal: 3rem;
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
@@ -349,7 +351,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
+    margin-right: var(--gutter-medium-1);
 }
 
 @media(max-width: 500px) {
@@ -416,11 +418,11 @@ body:not(.user-is-tabbing) a:focus {
 
 
 .header {
-    background:  url('./images/image\ 9.png');
-    height: 100vh;
+    background:  url('./images/image9.png');
+    height: 70vh;
     background-size: contain;
-    background-position: fixed;
-    background-attachment: fixed;
+    background-position: contain;
+    /* background-attachment: contain; */ */
     font-size: var(--font-size-normal);
     /* image-orientation: from-image; */
     /* width: 500px */
@@ -464,7 +466,6 @@ body:not(.user-is-tabbing) a:focus {
         flex-direction: column-reverse;
     }
 }
-
 .work__box:not(:last-child) {
     margin-bottom: 25rem;
 }
