@@ -404,11 +404,19 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
+/* .header{
+  background-image: url('./images/image\ 9.png'); /* The image used */
+  /* background-color: #cccccc; /* Used if the image is unavailable */
+  /* height: 500px; /* You must set a specified height */
+  /* background-repeat: no-repeat; Do not repeat the image */
+  /* background-size: contain; Resize the background image to cover the entire container */
+  /* font-size: var(--font-size-normal); */
+  /* background-attachment: fixed; */
+
+
 
 .header {
-    background: linear-gradient(rgba(255, 254, 254, 0.1), rgba(0,0,0, .4)), 
-        url('./images/image\ 9.png');
-    
+    background:  url('./images/image\ 9.png');
     height: 100vh;
     background-size: contain;
     background-position: fixed;
@@ -574,7 +582,11 @@ body:not(.user-is-tabbing) a:focus {
         align-items: initial;
     }
 }
-
+.flowchart {
+    width: auto; 
+    max-height: 100%; 
+   
+}
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
 }
@@ -582,7 +594,7 @@ body:not(.user-is-tabbing) a:focus {
 @media(min-width: 901px) {
     .about__text {
         
-        flex: 0 0 30%;
+        flex: 0 0 50%;
     }
     
     .about__photo-container {
