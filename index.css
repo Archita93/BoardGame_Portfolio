@@ -422,7 +422,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 70vh;
     background-size: contain;
     background-position: contain;
-    /* background-attachment: contain; */ */
+    /* background-attachment: contain; */ 
     font-size: var(--font-size-normal);
     /* image-orientation: from-image; */
     /* width: 500px */
@@ -467,12 +467,12 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 5rem;
 }
 
 @media(max-width: 500px) {
     .work__box:not(:last-child) {
-        margin-bottom: 20rem;
+        margin-bottom: 5rem;
     }
 }
 
